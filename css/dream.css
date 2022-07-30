@@ -28,6 +28,30 @@
     margin: 0.91% 2% !important;
 }
 
+@media only screen and (max-width: 1200px) {
+    .full-wrapper {
+        margin: 1.45% 2% !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .full-wrapper {
+        margin: 1.7% 2% !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .full-wrapper {
+        margin: 2.25% 2% !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .full-wrapper {
+        margin: 3.6% 2% !important;
+    }
+}
+
 /* .nav-logo-wrap .logo img {
     max-height: 150% !important;
 } */
@@ -74,7 +98,7 @@
 
     .hs-line-3,
     .section-text {
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
     
     .section-title {
@@ -94,7 +118,7 @@
     }
 
     .hs-line-3 {
-        font-size: 10px !important;
+        font-size: 12px !important;
     }
 }
 
