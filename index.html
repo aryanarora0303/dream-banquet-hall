@@ -62,11 +62,11 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                     <div class="inner-nav desktop-nav">
                         <ul class="clearlist scroll-nav local-scroll">
                             <li class="active"><a href="#home" class="dream-primary-color dream-primary-color-hover">Home</a></li>
-                            <li><a href="#location" class="dream-primary-color dream-primary-color-hover">Location</a></li>                           
+                            <li><a onclick="scrollToID('location')" class="dream-primary-color dream-primary-color-hover">Location</a></li>                           
                             
                             <!-- Button -->
                             <li>
-                                <a href="#reservations" target="_blank"><span class="btn btn-mod btn-circle btn-w">Book an Event</span></a>
+                                <a onclick="scrollToID('reservations')" target="_blank"><span class="btn btn-mod btn-circle btn-w">Book an Event</span></a>
                             </li>
                             <!-- End Button -->
                             
@@ -101,7 +101,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                         
                         <!-- Scroll Down -->
                         <div class="local-scroll">
-                            <a href="#reservations" class="scroll-down"><i class="fa fa-angle-down scroll-down-icon"></i><span class="sr-only">Scroll to the next section</span></a>
+                            <a onclick="scrollToID('about')" class="scroll-down"><i class="fa fa-angle-down scroll-down-icon"></i><span class="sr-only">Scroll to the next section</span></a>
                         </div>
                         <!-- End Scroll Down -->
                         
@@ -472,6 +472,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <script type="text/javascript" src="js/contact-reservations-form.js"></script>
         <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
         <script type="text/javascript" src="js/dream.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
         <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
         
     </body>
