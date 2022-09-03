@@ -1,16 +1,19 @@
+// Change Tag line image based on device size
 window.onload = changeTagLineImageForMobile();
-
 function changeTagLineImageForMobile() {
     if(window.innerWidth <= 450) {
-        document.getElementById("home").style.backgroundImage = "url('./images/tag-line-bg-mobile.jpg')";
+        let pathname = window.location.pathname;
+        
+        // Only chage tag line image for the index page
+        if (pathname.includes("index.html") || (pathname.includes("/") && pathname.length == 1)){
+            document.getElementById("home").style.backgroundImage = "url('./images/tag-line-bg-mobile.jpg')";
+        }
     }
 }
 
 // Scroll to Reservations
 function scrollToID(id) {
-    event.preventDefault();
-
-    // seamless.elementScrollIntoView(document.getElementById("reservations"), {
+    // seamless.elementScrollIntoView(document.getElementById(id), {
     //   behavior: "smooth",
     //   block: "start"
     // });
@@ -25,3 +28,21 @@ function scrollToID(id) {
          behavior: "smooth"
     });
 }
+
+// Open home page and scroll to id as specified
+function scrollToIndexPageID(id) {
+    window.open(`/index.html?scrollTo=${id}`,"_self");
+}
+
+// Scroll to ID, Coming from another page
+$(document).ready(function(){
+    let queryString = window.location.search;
+    let urlParams = new URLSearchParams(queryString);
+    let scrollTo = urlParams.get('scrollTo');
+
+    if(scrollTo){
+      setTimeout(function(){
+        scrollToID(scrollTo.toString());
+      }, 1000);
+    }
+});
