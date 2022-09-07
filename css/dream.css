@@ -336,3 +336,7 @@ footer .row .contact-item {
         padding-bottom: 25px;
     }
 }
+
+.table tr td {
+    width: 100%;
+}
