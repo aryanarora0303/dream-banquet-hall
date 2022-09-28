@@ -340,3 +340,15 @@ footer .row .contact-item {
 .table tr td {
     width: 100%;
 }
+
+#menu ul.nav.nav-tabs li a {
+    color: #495057;
+}
+
+#menu ul.nav.nav-tabs li a.nav-link.active {
+    color: #111;
+}
+
+#menu ul.nav.nav-tabs li a:hover {
+    text-decoration: none;
+}
