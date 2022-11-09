@@ -5,6 +5,10 @@
     color: #f9e89c !important;
 }
 
+.dream-primary-color-background {
+    background: rgb(249 232 156 / 60%) !important;
+}
+
 a.dream-primary-color-hover:hover {
     color: #fff !important;
 }
@@ -238,6 +242,8 @@ footer .row .contact-item {
     margin: auto !important;
 }
 
+
+
 @media (max-width: 992px) {
     footer .row .contact-item {
         width: fit-content !important;
@@ -313,12 +319,12 @@ footer .row .contact-item {
     color: #f9e89c;
 } 
 
-#testimonial .owl-page span {
+.owl-page span {
     background: #fff;
     border: #fff;
 }
 
-#testimonial .owl-page.active span {
+.owl-page.active span {
     background: #f9e89c;
     border: #f9e89c;
 }
@@ -352,3 +358,16 @@ footer .row .contact-item {
 #menu ul.nav.nav-tabs li a:hover {
     text-decoration: none;
 }
+
+
+/* ================ */
+/* Home Page Slider */
+/* ================ */
+#home .owl-pagination {
+    bottom: 50px;
+}
+
+#home .scroll-down {
+    bottom: 25px;
+}
+
