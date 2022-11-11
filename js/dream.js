@@ -6,7 +6,9 @@ function changeTagLineImageForMobile() {
         
         // Only chage tag line image for the index page
         if (pathname.includes("index.html") || (pathname.includes("/") && pathname.length == 1)){
-            document.getElementById("home").style.backgroundImage = "url('./images/tag-line-bg-mobile.jpg')";
+            document.querySelectorAll('[id^="slider"]').forEach((el, index) => {
+                el.style.backgroundImage = "url('./images/tag-line-bg-mobile.jpg')";
+            })
         }
     }
 }
