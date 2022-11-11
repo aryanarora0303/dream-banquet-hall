@@ -9,6 +9,14 @@ function changeTagLineImageForMobile() {
             document.querySelectorAll('[id^="slider"]').forEach((el, index) => {
                 el.style.backgroundImage = "url('./images/tag-line-bg-mobile.jpg')";
             })
+
+            document.querySelectorAll('[id^="slider-party"]').forEach((el, index) => {
+                el.style.backgroundImage = "url('./images/tag-line-party-mobile.jpg')";
+            })
+
+            document.querySelectorAll('[id^="slider-catering"]').forEach((el, index) => {
+                el.style.backgroundImage = "url('./images/tag-line-catering-mobile.jpg')";
+            })
         }
     }
 }

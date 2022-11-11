@@ -1280,6 +1280,16 @@ a.bg-video-button-muted{
     color: rgba(255,255,255, .7);
 }
 
+.hs-line-3-1{
+    margin-top: 0;
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255,255,255, .7);
+}
+
 .hs-line-4{
     margin-top: 0;
     position: relative;
