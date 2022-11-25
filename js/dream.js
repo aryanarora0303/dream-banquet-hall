@@ -205,8 +205,8 @@ $('input.non-veg-appetizer-checkbox').on('change', function(evt) {
 
  function print_menu(){
     document.getElementById("modal_to_print").innerHTML = "";
-    document.getElementById("modal_to_print").innerHTML += `<h1 class"dream-primary-color">Dream Banquet Hall</h1>`;
-    document.getElementById("modal_to_print").innerHTML += `<h2 class="dream-primary-color">Menu</h2>`;
+    document.getElementById("modal_to_print").innerHTML += `<h1>Dream Banquet Hall</h1>`;
+    document.getElementById("modal_to_print").innerHTML += `<h2>Menu</h2>`;
     document.getElementById("modal_to_print").innerHTML += `<hr/>`;
 
     var prev_menu_item_name = "";
