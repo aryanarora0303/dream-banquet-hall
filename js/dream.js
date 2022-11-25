@@ -233,6 +233,6 @@ $('input.non-veg-appetizer-checkbox').on('change', function(evt) {
         removeInline: false,        
         printDelay: 30,            
         header: null,             
-        formValues: true          
+        formValues: true
     });
  }
