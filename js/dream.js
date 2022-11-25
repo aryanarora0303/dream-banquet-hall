@@ -100,8 +100,8 @@ document.getElementById("package-b-modal-controller").addEventListener("click", 
     package.veg_appetizer_limit = 3;
     package.non_veg_appetizer_limit = 2;
 
-    package.veg_dinner = 3;
-    package.non_veg_dinner = 2;
+    package.veg_dinner_limit = 3;
+    package.non_veg_dinner_limit = 2;
 
     package.salads_limit = 2;
     package.raita_limit = 1;
@@ -115,8 +115,8 @@ document.getElementById("package-c-modal-controller").addEventListener("click", 
     package.veg_appetizer_limit = 2;
     package.non_veg_appetizer_limit = 2;
 
-    package.veg_dinner = 2;
-    package.non_veg_dinner = 2;
+    package.veg_dinner_limit = 2;
+    package.non_veg_dinner_limit = 2;
 
     package.salads_limit = 1;
     package.raita_limit = 1;
@@ -130,8 +130,8 @@ document.getElementById("package-d-modal-controller").addEventListener("click", 
     package.veg_appetizer_limit = 2;
     package.non_veg_appetizer_limit = 1;
 
-    package.veg_dinner = 2;
-    package.non_veg_dinner = 1;
+    package.veg_dinner_limit = 2;
+    package.non_veg_dinner_limit = 1;
 
     package.salads_limit = 1;
     package.raita_limit = 1;
