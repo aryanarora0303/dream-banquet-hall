@@ -60,7 +60,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
             }
         </script>
     </head>
-    <body class="appear-animate">
+    <body class="appear-animate" onafterprint="hide_modal_to_print()">
         
         <!-- Page Loader -->        
         <div class="page-loader">
@@ -615,7 +615,13 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
                                             </tbody>
                                         </table>
-                                        
+
+                                        <div class="center-element">
+                                            <button id="package-a-modal-controller" type="button" class="btn btn-mod btn-medium btn-round dream-primary-color" data-bs-toggle="modal" data-bs-target="#package-modal">
+                                                Build Your Menu
+                                            </button>
+                                        </div>
+
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" id="package-b">
                                         
@@ -702,6 +708,12 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
                                             </tbody>
                                         </table>
+
+                                        <div class="center-element">
+                                            <button id="package-b-modal-controller" type="button" class="btn btn-mod btn-medium btn-round dream-primary-color" data-bs-toggle="modal" data-bs-target="#package-modal">
+                                                Build Your Menu
+                                            </button>
+                                        </div>
                                         
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" id="package-c">
@@ -789,6 +801,12 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
                                             </tbody>
                                         </table>
+
+                                        <div class="center-element">
+                                            <button id="package-c-modal-controller" type="button" class="btn btn-mod btn-medium btn-round dream-primary-color" data-bs-toggle="modal" data-bs-target="#package-modal">
+                                                Build Your Menu
+                                            </button>
+                                        </div>
                                         
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" id="package-d">
@@ -876,7 +894,370 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
                                             </tbody>
                                         </table>
+
+                                        <div class="center-element">
+                                            <button id="package-d-modal-controller" type="button" class="btn btn-mod btn-medium btn-round dream-primary-color" data-bs-toggle="modal" data-bs-target="#package-modal">
+                                                Build Your Menu
+                                            </button>
+                                        </div>
                                         
+                                    </div>
+
+                                    <div class="modal fade" id="package-modal" tabindex="-1" aria-labelledby="package-modal-label" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="package-modal-label"></h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form action="">
+
+                                                        <!-- Veg Appetizers -->
+                                                        <h3 class="hs-line-3 dream-secondary-color mb-0 mt-10">Veg Appetizers</h3>
+                                                        <span id="veg-appetizer-checkbox-label" class="bottom-border checkbox-label"></span>
+                                                        <div class="menu-items">
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-appetizer-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Appetizer" value="Veg Spring Roll">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Veg Spring Roll</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-appetizer-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Appetizer" value="Cocktail Samosa">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Cocktail Samosa</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-appetizer-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Appetizer" value="Paneer Pakora">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Paneer Pakora</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-appetizer-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Appetizer" value="Veg Pakora">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Veg Pakora</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-appetizer-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Appetizer" value="Gobhi Pakora">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Gobhi Pakora</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-appetizer-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Appetizer" value="Chilli Paneer">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Chilli Paneer</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-appetizer-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Appetizer" value="Veg Manchurian">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Veg Manchurian</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-appetizer-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Appetizer" value="Veg Noodles">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Veg Noodles</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-appetizer-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Appetizer" value="Aloo Tikki">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Aloo Tikki</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-appetizer-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Appetizer" value="Stuff Naan">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Stuff Naan</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-appetizer-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Appetizer" value="Veg Fried Rice">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Veg Fried Rice</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-appetizer-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Appetizer" value="Mushroom Chilli">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Mushroom Chilli</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-appetizer-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Appetizer" value="Soya Chilli">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Soya Chilli</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-appetizer-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Appetizer" value="Gobhi Manchurian">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Gobhi Manchurian</label>
+                                                            </div>
+                                                        </div>
+                                                        
+
+                                                        <!-- Non Veg Appetizers -->
+                                                        <h3 class="hs-line-3 dream-secondary-color mb-0 mt-20">Non Veg Appetizers</h3>
+                                                        <span id="non-veg-appetizer-checkbox-label" class="bottom-border checkbox-label"></span>
+                                                        <div class="menu-items">
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input non-veg-appetizer-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Appetizer" value="Chicken Samosa">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Chicken Samosa</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input non-veg-appetizer-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Appetizer" value="Chicken Pakora">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Chicken Pakora</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input non-veg-appetizer-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Appetizer" value="Garlic Wings">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Garlic Wings</label>
+                                                            </div>
+    
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input non-veg-appetizer-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Appetizer" value="Chilli Chicken">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Chilli Chicken</label>
+                                                            </div>
+    
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input non-veg-appetizer-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Appetizer" value="Fish Pakora">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Fish Pakora</label>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <!-- Veg Dinner -->
+                                                        <h3 class="hs-line-3 dream-secondary-color mb-0 mt-20">Veg Dinner</h3>
+                                                        <span id="veg-dinner-checkbox-label" class="bottom-border checkbox-label"></span>
+                                                        <div class="menu-items">
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Daal Makhani">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Daal Makhani</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Aloo Gobhi">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Yellow Daal Tadka</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Yellow Daal Tadka">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Aloo Gobhi</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Channa Masala">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Channa Masala</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Bhindi Do Pyaza">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Bhindi Do Pyaza</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Sarso Ka Saag">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Sarso Ka Saag</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Mumbai Style Baingan">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Mumbai Style Baingan</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Baingan Bhartha">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Baingan Bhartha</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Mix Veg">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Mix Veg</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Paneer Bhurji">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Paneer Bhurji</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Paneer Kali Mirch">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Paneer Kali Mirch</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Paneer Vindaloo">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Paneer Vindaloo</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Goan Paneer">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Goan Paneer</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Palak Paneer">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Palak Paneer</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Kadahi Paneer">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Kadahi Paneer</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Achari Paneer">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Achari Paneer</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Navratan Korma">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Navratan Korma</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Kaju Khoya">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Kaju Khoya</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Malai Kofta">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Malai Kofta</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Mushroom Mutter">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Mushroom Mutter</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Mutter Paneer ">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Mutter Paneer </label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Panner Tikka Masala">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Panner Tikka Masala</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Veg Dinner" value="Indian Style Chilli Paneer">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Indian Style Chilli Paneer</label>
+                                                            </div>
+                                                        </div>
+                                                        
+
+                                                        <!-- Non Veg Dinner -->
+                                                        <h3 class="hs-line-3 dream-secondary-color mb-0 mt-20">Non Veg Dinner</h3>
+                                                        <span id="non-veg-dinner-checkbox-label" class="bottom-border checkbox-label"></span>
+                                                        <div class="menu-items">
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input non-veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Dinner" value="Butter Chicken">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Butter Chicken</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input non-veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Dinner" value="Mango Chicken">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Mango Chicken</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input non-veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Dinner" value="Goan Chicken">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Goan Chicken</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input non-veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Dinner" value="Indian Style Chilli Chicken">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Indian Style Chilli Chicken</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input non-veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Dinner" value="Achari Chicken">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Achari Chicken</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input non-veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Dinner" value="Saag Chicken">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Saag Chicken</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input non-veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Dinner" value="Chicken Jalfrezi">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Chicken Jalfrezi</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input non-veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Dinner" value="Chicken Curry">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Chicken Curry</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input non-veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Dinner" value="Lamb Curry">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Lamb Curry</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input non-veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Dinner" value="Goat Curry">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Goat Curry</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input non-veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Dinner" value="Lamb Chhetinad">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Lamb Chhetinad</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input non-veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Dinner" value="Chicken Chhetinad">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Chicken Chhetinad</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input non-veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Dinner" value="Lamb Saag">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Lamb Saag</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input non-veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Dinner" value="Lamb Korma">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Lamb Korma</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input non-veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Dinner" value="Chiken Tikka Masala">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Chiken Tikka Masala</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input non-veg-dinner-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Dinner" value="Chicken Korma">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Chicken Korma</label>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Salad -->
+                                                        <h3 class="hs-line-3 dream-secondary-color mb-0 mt-20">Salad</h3>
+                                                        <span id="salad-checkbox-label" class="bottom-border checkbox-label"></span>
+                                                        <div class="menu-items">
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input salad-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Dinner" value="Indian Salad">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Indian Salad</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input salad-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Dinner" value="Kachumber Salad">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Kachumber Salad</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input salad-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Dinner" value="Pasta Salad">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Pasta Salad</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input salad-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Dinner" value="Caesar Salad">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Caesar Salad</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input salad-checkbox" type="checkbox" id="inlineCheckbox1" name="Non Veg Dinner" value="Greek Salad">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Greek Salad</label>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Raita -->
+                                                        <h3 class="hs-line-3 dream-secondary-color mb-0 mt-20">Raita</h3>
+                                                        <span id="raita-checkbox-label" class="bottom-border checkbox-label"></span>
+                                                        <div class="menu-items">
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input raita-checkbox" type="checkbox" id="inlineCheckbox1" name="Raita" value="Mix Raita">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Mix Raita</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input raita-checkbox" type="checkbox" id="inlineCheckbox1" name="Raita" value="Boondi Raita">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Boondi Raita</label>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Dessert -->
+                                                        <h3 class="hs-line-3 dream-secondary-color mb-0 mt-20">Dessert</h3>
+                                                        <span id="dessert-checkbox-label" class="bottom-border checkbox-label"></span>
+                                                        <div class="menu-items">
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input dessert-checkbox" type="checkbox" id="inlineCheckbox1" name="Dessert" value="Gulab Jamun">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Gulab Jamun</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input dessert-checkbox" type="checkbox" id="inlineCheckbox1" name="Dessert" value="Chocolate Kheer">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Chocolate Kheer</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input dessert-checkbox" type="checkbox" id="inlineCheckbox1" name="Dessert" value="Kulfi Faluda">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Kulfi Faluda</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input dessert-checkbox" type="checkbox" id="inlineCheckbox1" name="Dessert" value="Ras Malai">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Ras Malai</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input dessert-checkbox" type="checkbox" id="inlineCheckbox1" name="Dessert" value="Gajar Halwa">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Gajar Halwa</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input dessert-checkbox" type="checkbox" id="inlineCheckbox1" name="Dessert" value="Fruit Cream">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Fruit Cream</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline menu-item">
+                                                                <input class="form-check-input dessert-checkbox" type="checkbox" id="inlineCheckbox1" name="Dessert" value="Fruit Platter">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Fruit Platter</label>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </form>
+                                                </div>
+
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-mod btn-medium btn-round" data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-mod btn-medium btn-round dream-primary-color" onclick="print_menu()">Print Menu</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -922,6 +1303,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                     </div>
                 </section>
                 <!-- End Reservation Section -->
+                
             </main>
             
             <!-- Foter -->
@@ -1061,7 +1443,9 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
         <script type="text/javascript" src="js/dream.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
+        <script src="./utility/printThis.js"></script>
         <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
         
+        <div id="modal_to_print"></div>
     </body>
 </html>
