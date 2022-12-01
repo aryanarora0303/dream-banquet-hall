@@ -62,11 +62,14 @@ $(document).ready(function(){
 var package = {
     veg_appetizer_limit: 0,
     non_veg_appetizer_limit: 0,
+    live_counter_limit: 0,
     veg_dinner_limit: 0,
     non_veg_dinner_limit: 0,
+    sea_food_limit: 0,
     salads_limit: 0,
     raita_limit: 0,
-    dessert_limit: 0
+    dessert_limit: 0,
+    add_on_limit: 0
 }
 
 function updateModalLabels(package_type){
@@ -74,24 +77,33 @@ function updateModalLabels(package_type){
 
     document.getElementById("veg-appetizer-checkbox-label").innerText = `Choose any ${package.veg_appetizer_limit}`;
     document.getElementById("non-veg-appetizer-checkbox-label").innerText = `Choose any ${package.non_veg_appetizer_limit}`;
+    document.getElementById("live-counter-checkbox-label").innerText = `Extra Charges Applicable`;
     document.getElementById("veg-dinner-checkbox-label").innerText = `Choose any ${package.veg_dinner_limit}`;
     document.getElementById("non-veg-dinner-checkbox-label").innerText = `Choose any ${package.non_veg_dinner_limit}`;
+    document.getElementById("sea-food-checkbox-label").innerText = `Extra Charges Applicable`;
     document.getElementById("salad-checkbox-label").innerText = `Choose any ${package.salads_limit}`;
     document.getElementById("raita-checkbox-label").innerText = `Choose any ${package.raita_limit}`;
     document.getElementById("dessert-checkbox-label").innerText = `Choose any ${package.dessert_limit}`;
+    document.getElementById("add-on-checkbox-label").innerText = `Extra Charges Applicable`;
 }
 
 document.getElementById("package-a-modal-controller").addEventListener("click", function() {
     package.veg_appetizer_limit = 3;
     package.non_veg_appetizer_limit = 3;
+    
+    package.live_counter_limit = 100; // there's no limit on this item
 
     package.veg_dinner_limit = 3;
     package.non_veg_dinner_limit = 3;
+
+    package.sea_food_limit = 100; // there's no limit on this item
 
     package.salads_limit = 3;
     package.raita_limit = 1;
 
     package.dessert_limit = 3;
+
+    package.add_on_limit = 100; // there's no limit on this item
 
     updateModalLabels('A');
 });
@@ -100,13 +112,19 @@ document.getElementById("package-b-modal-controller").addEventListener("click", 
     package.veg_appetizer_limit = 3;
     package.non_veg_appetizer_limit = 2;
 
+    package.live_counter_limit = 100; // there's no limit on this item
+
     package.veg_dinner_limit = 3;
     package.non_veg_dinner_limit = 2;
+
+    package.sea_food_limit = 100; // there's no limit on this item
 
     package.salads_limit = 2;
     package.raita_limit = 1;
 
     package.dessert_limit = 2;
+
+    package.add_on_limit = 100; // there's no limit on this item
 
     updateModalLabels('B');
 });
@@ -115,13 +133,19 @@ document.getElementById("package-c-modal-controller").addEventListener("click", 
     package.veg_appetizer_limit = 2;
     package.non_veg_appetizer_limit = 2;
 
+    package.live_counter_limit = 100; // there's no limit on this item
+
     package.veg_dinner_limit = 2;
     package.non_veg_dinner_limit = 2;
+
+    package.sea_food_limit = 100; // there's no limit on this item
 
     package.salads_limit = 1;
     package.raita_limit = 1;
 
-    package.dessert_limit = 3;
+    package.dessert_limit = 1;
+
+    package.add_on_limit = 100; // there's no limit on this item
 
     updateModalLabels('C');
 });
@@ -130,13 +154,19 @@ document.getElementById("package-d-modal-controller").addEventListener("click", 
     package.veg_appetizer_limit = 2;
     package.non_veg_appetizer_limit = 1;
 
+    package.live_counter_limit = 100; // there's no limit on this item
+
     package.veg_dinner_limit = 2;
     package.non_veg_dinner_limit = 1;
+
+    package.sea_food_limit = 100; // there's no limit on this item
 
     package.salads_limit = 1;
     package.raita_limit = 1;
 
     package.dessert_limit = 1;
+
+    package.add_on_limit = 100; // there's no limit on this item
 
     updateModalLabels('D');
 });
@@ -155,6 +185,13 @@ $('input.non-veg-appetizer-checkbox').on('change', function(evt) {
     }
  });
 
+ $('input.live-counter-checkbox').on('change', function(evt) {
+    var checked_length = document.querySelectorAll("input.live-counter-checkbox:checked").length;
+    if(checked_length > package.live_counter_limit) {
+        this.checked = false; // this item has no limit
+    }
+ });
+
  $('input.veg-dinner-checkbox').on('change', function(evt) {
     var checked_length = document.querySelectorAll("input.veg-dinner-checkbox:checked").length;
     if(checked_length > package.veg_dinner_limit) {
@@ -166,6 +203,13 @@ $('input.non-veg-appetizer-checkbox').on('change', function(evt) {
     var checked_length = document.querySelectorAll("input.non-veg-dinner-checkbox:checked").length;
     if(checked_length > package.non_veg_dinner_limit) {
         this.checked = false;
+    }
+ });
+
+ $('input.sea-food-checkbox').on('change', function(evt) {
+    var checked_length = document.querySelectorAll("input.sea-food-checkbox:checked").length;
+    if(checked_length > package.sea_food_limit) { 
+        this.checked = false; // this item has no limit
     }
  });
 
@@ -187,6 +231,13 @@ $('input.non-veg-appetizer-checkbox').on('change', function(evt) {
     var checked_length = document.querySelectorAll("input.dessert-checkbox:checked").length;
     if(checked_length > package.dessert_limit) {
         this.checked = false;
+    }
+ });
+
+ $('input.add-on-checkbox').on('change', function(evt) {
+    var checked_length = document.querySelectorAll("input.add-on-checkbox:checked").length;
+    if(checked_length > package.add_on_limit) {
+        this.checked = false; // this item has no limit
     }
  });
 
